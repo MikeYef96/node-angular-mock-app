@@ -10,7 +10,7 @@ You can find running server at
 
 To run Angular front-end app please open frontend-angular folder and run
 
-    npm start
+    npm start --configuration=mock
 
 You  can find running front end app at
 
