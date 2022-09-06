@@ -1,0 +1,22 @@
+[
+  {
+    "rn": 0,
+    "id": "0",
+    "name": "Jungle",
+    "type": 0,
+    "wells": 10042,
+    "default": false,
+    "hidden": false,
+    "author": "Admin"
+  },
+  {
+    "rn": 1,
+    "id": "1",
+    "name": "Main",
+    "type": 1,
+    "wells": 156,
+    "default": true,
+    "hidden": false,
+    "author": "User"
+  }
+]
