@@ -80,9 +80,34 @@
             },
             "development": {
               "browserTarget": "frontend-angular:build:development"
+            },
+            "mock": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.mock.ts"
+                }
+              ]
             }
           },
-          "defaultConfiguration": "development"
+          "options": {
+            "browserTarget": "frontend-angular:build",
+            "proxyConfig": "src/proxy.conf.json"
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "frontend-angular:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "frontend-angular:build:production"
+            },
+            "mock": {
+              "browserTarget": "frontend-angular:build:mock"
+            }
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
